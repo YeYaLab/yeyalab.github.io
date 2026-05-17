@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-gem "jekyll", ">= 3.6.3"
-gem "github-pages", group: :jekyll_plugins
-gem "csv"
-gem "bigdecimal"
+gem "jekyll", "~> 4.4"
+gem "jekyll-sass-converter", "~> 3.1"
+gem "kramdown-parser-gfm", "~> 1.1"
+gem "webrick", "~> 1.9"
 
