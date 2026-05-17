@@ -1,34 +1,18 @@
-<div id="footer" class="panel">
-  <div class="panel-footer">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-sm-4">
-				<p>{{ site.title }}</p>
-				<p>Yaara Yeshurun, Tel-Aviv University</p>
-			</div>
-
-			<div class="col-sm-4">
-				<p>Links</p>
-				<ul class="list-unstyled">
-					<li><a href="{{ site.baseurl }}/team">Team</a></li>
-					<li><a href="{{ site.baseurl }}/publications">Publications</a></li>
-					<li><a href="{{ site.baseurl }}/contact">Contact Us</a></li>
-				</ul>
-			</div>
-
-			<div class="col-sm-4">
-				<p>Contact</p>
-				<p><a href="mailto:ye.ya.lab@gmail.com">ye.ya.lab@gmail.com</a></p>
-				<p>Sharett building, Room 204<br>Tel Aviv University</p>
-			</div>
-		</div>
-
-		<div class="row mt-3">
-			<p class="text-center">Copyright ©2026 {{ site.title }}</p>
-		</div>
-	</div>
+<footer id="footer">
+  <div class="container-fluid footer-inner">
+    <div class="row">
+      <div class="col-sm-6 footer-about">
+        <p class="footer-title">{{ site.title }}</p>
+        <p>Yaara Yeshurun &middot; Tel-Aviv University</p>
+      </div>
+      <div class="col-sm-6 footer-contact">
+        <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+        <p>Sharett building, Room 204<br>Tel Aviv University</p>
+      </div>
+    </div>
+    <p class="footer-copy">&copy; {{ 'now' | date: "%Y" }} {{ site.title }}</p>
   </div>
-</div>
+</footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="{{ site.url }}{{ site.baseurl }}/js/bootstrap.min.js"></script>
+<script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>

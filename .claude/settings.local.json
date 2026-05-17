@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(awk '/<style/,/<\\\\/style>/' /tmp/popsci.html | grep -A2 -E '\\(article-cube|newspaper-photo|article-details\\)' | head -50)",
+      "Read(//tmp/**)",
+      "Bash(awk '/article-cube \\\\{/,/^}/' /tmp/popsci.html)",
+      "Bash(awk '/newspaper-photo \\\\{/,/^}/' /tmp/popsci.html)",
+      "Bash(awk '/article-details \\\\{/,/^}/' /tmp/popsci.html)",
+      "Bash(awk '/article-cube:hover/,/^}/' /tmp/popsci.html)",
+      "Bash(grep -oE '<div class=\"article-cube\">.{0,1500}' /tmp/popsci.html)",
+      "Bash(awk '/<div class=\"article-cube\">/,/<\\\\/p>/' /tmp/popsci.html)",
+      "Bash(grep -oE 'href=\"[^\"]*\"[^>]*>[א-תa-zA-Z0-9֐-׿ \"\\(\\)\\\\.\\\\,\\\\-:]{15,}' /tmp/popsci.html)",
+      "Bash(awk '/article-cube/,/<\\\\/div>/' /tmp/popsci.html)",
+      "Bash(awk '/article-cube\">/,/<\\\\/p>/' /tmp/popsci.html)",
+      "Bash(grep -v '^$')",
+      "Bash(awk 'BEGIN{c=0} /article-cube\">/{c++} c>0{print} /<\\\\/p>/{c=0}' /tmp/popsci.html)",
+      "Bash(awk 'BEGIN{RS=\"article-cube\"; ORS=\"\"} NR>1 && NR<14 {print \"===CUBE \"NR-1\"===\\\\n\"; print substr\\($0,1,1200\\); print \"\\\\n\"}' /tmp/popsci.html)"
+    ]
+  }
+}
