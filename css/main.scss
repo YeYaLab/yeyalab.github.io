@@ -42,12 +42,14 @@ a:hover, a:focus { color: #2a4a5e; }
 .container-fluid { margin-right: auto; margin-left: auto; max-width: 1100px; }
 
 /* Home banner & quote */
+.banner-wrap {
+  margin: 0 auto 28px;
+  max-width: 1000px;
+}
 .site-banner {
   display: block;
   width: 100%;
-  max-width: 1000px;
   height: auto;
-  margin: 0 auto 28px;
   border-radius: 6px;
 }
 
@@ -457,13 +459,18 @@ body.lightbox-open { overflow: hidden; }
     padding-right: 6px;
   }
 
-  /* Banner: keep a readable height on narrow screens by cropping the wide art */
-  .site-banner {
-    aspect-ratio: 3 / 1;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 4px;
+  /* Banner: show the full art on mobile via horizontal scroll, no crop */
+  .banner-wrap {
     margin-bottom: 18px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+  .site-banner {
+    height: 110px;
+    width: auto;
+    max-width: none;
+    border-radius: 4px;
   }
 
   .lab-quote {
@@ -481,6 +488,6 @@ body.lightbox-open { overflow: hidden; }
 }
 
 @media (max-width: 480px) {
-  .site-banner { aspect-ratio: 2.4 / 1; }
+  .site-banner { height: 95px; }
   h1 { font-size: 22px; }
 }
