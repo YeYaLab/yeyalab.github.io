@@ -1,52 +1,55 @@
 ---
 title: "Publications"
 layout: default
-excerpt: "RT2 Lab -- Publications."
+excerpt: "Publications from the Social and Cognitive Neuroscience (in the wild) Lab"
 sitemap: false
 permalink: /publications/
 ---
 
 <h1>{{page.title}}</h1>
 
-<div class="panel-group" id="accordion">
-    <div class="panel panel-default">
+<h2 class="publication-year">2025</h2>
+<ul class="publication-list">
+  <li>Zvi, Y., Kerem, N., & Yeshurun, Y. (2025). You Are What You Sync: Neural Synchronization Predicts Religious Affiliation. <em>bioRxiv</em>, 2025-12. <a href="https://www.biorxiv.org/">December 2025</a></li>
+  <li>Amihai, L., Sharvit, E., Man, H., Hanein, Y., & Yeshurun, Y. (2025). Facial mimicry predicts preference. <em>Communications Psychology</em>, 3(1), 176. <a href="https://www.nature.com/">November 2025</a></li>
+  <li>Ohad, T., Zvi, Y., & Yeshurun, Y. (2025). Default mode network synchrony reflects shared understanding. <em>Current Opinion in Behavioral Sciences</em>, 64, 101540. <a href="https://www.sciencedirect.com/">August 2025</a></li>
+  <li>Ravreby, I., Navon, M., Pinhas, E., Lerer, J., Bar-Anan, Y., & Yeshurun, Y. (2024). The many faces of mimicry depend on the social context. <em>Emotion</em>. <a href="https://psycnet.apa.org/">June 2025</a></li>
+  <li>Braun, G., Yeshurun, Y., & Shetreet, E. (2025). Shared disbelief and shared belief: Belief and disbelief as drivers of interpersonal neural synchronization during narrative processing. <em>Proceedings of the National Academy of Sciences</em>, 122(23), e2422396122. <a href="https://www.pnas.org/">May 2025</a></li>
+</ul>
 
-    {% for publi in site.data.publications %}
-        <div class="panel-heading">
-            <a data-toggle="collapse" data-parent="#accordion"
-               href="#collapse{{forloop.index}}"
-               style="color: inherit;">
-            <!-- authors -->
-            {% assign authors = "" | split:"/" %}
-            {% for author in publi.author %}
-                {% assign authors = authors | push: author.family %}
-            {% endfor %}
-            {{ authors | array_to_sentence_string }},
+<h2 class="publication-year">2024</h2>
+<ul class="publication-list">
+  <li>Kobo, O., Yeshurun, Y., & Schonberg, T. (2024). Reward-related regions play a role in natural story comprehension. <em>iScience</em>, 27(6). <a href="https://www.cell.com/">April 2024</a></li>
+</ul>
 
-            <!-- title with link -->
-            "{{ publi.title }}",
+<h2 class="publication-year">2023</h2>
+<ul class="publication-list">
+  <li>Ohad, T., & Yeshurun, Y. (2023). Neural Synchronization as a Function of Engagement with the Narrative. <em>NeuroImage</em>, 276, 120215. <a href="https://www.sciencedirect.com/">June 2023</a></li>
+  <li>Tikochinski, R., Goldstein, A., Yeshurun, Y., Hasson, U., & Reichart, R. (2023). Perspective changes in human listeners are aligned with the contextual transformation of the word embedding space. <em>Cerebral Cortex</em>. <a href="https://academic.oup.com/">March 2023</a></li>
+  <li>Katabi, N., Simon, H., Yakim, S., Ravreby, I., Ohad, T., & Yeshurun, Y. (2023). Deeper Than You Think: Partisanship-Dependent Brain Responses in Early Sensory and Motor Brain Regions. <em>Journal of Neuroscience</em>, 43(6), 1027-1037. <a href="https://scholar.google.com/">February 2023</a></li>
+</ul>
 
-            <!-- container -->
-            <b>{{ publi.container-title }}</b>
+<h2 class="publication-year">2022</h2>
+<ul class="publication-list">
+  <li>Ravreby, I., Shilat, Y., & Yeshurun, Y. (2022). Liking as a balance between synchronization, complexity and novelty. <em>Scientific Reports</em>, 12(1), 1-12. <a href="https://www.nature.com/">February 2022</a></li>
+</ul>
 
-            <!-- issued date -->
-            ({{ publi.issued.date-parts | jsonify | slice: 3,4 }}),
+<h2 class="publication-year">2021</h2>
+<ul class="publication-list">
+  <li>Amram, R., Ravreby, I., Trainin, N., Yeshurun, Y. (2021). Fear of being near: Fear supersedes sociability when interacting amid a pandemic. <em>Personality and Individual Differences</em>. <a href="https://doi.org/">November 2021</a></li>
+  <li>Trainin, N., & Yeshurun, Y. (2021). Reading the mind with a mask? Improvement in reading the mind in the eyes during the COVID-19 pandemic. <em>Emotion</em>. <a href="https://dx.doi.org/">November 2021</a></li>
+  <li>Nastase, S. A., Liu, Y.-F., Hillman, H., Zadbood, A., Hasenfratz, L., Keshavarzian, N., Chen, J., Honey, C. J., Yeshurun, Y., Regev, M., Nguyen, M., Chang, C. H. C., Baldassano, C., Lositsky, O., Simony, E., Chow, M. A., Leong, Y. C., Brooks, P. P., Micciche, E., Choe, G., Goldstein, A., Vanderwal, T., Halchenko, Y. O., Norman, K. A., & Hasson, U. (2021). The "Narratives" fMRI dataset for evaluating models of naturalistic language comprehension. <em>Scientific Data</em>, 8, 250. <a href="https://doi.org/">September 2021</a></li>
+  <li>Yeshurun, Y., Nguyen, M., Hasson, U. (2021). The default mode network: where the idiosyncratic self meets the shared social world. <em>Nature Review Neuroscience</em>. <a href="https://www.nature.com/">January 2021</a></li>
+</ul>
 
-            <!-- DOI -->
-            {% if publi.DOI %}
-                <a href="https://doi.org/{{publi.DOI}}">DOI:{{publi.DOI}}</a>
-            {% endif %}
-            </a>
-        </div>
-
-        <div id="collapse{{forloop.index}}" class="panel-collapse collapse">
-            <div class="panel-body">
-                <p>{{ publi.abstract }}</p>
-
-                <a class="btn btn-outline-primary" href="https://doi.org/{{publi.DOI}}"
-                   role="button" target="blank">Link</a>
-            </div>
-        </div>
-    {% endfor %}
-    </div>
-</div>
+<h2 class="publication-year">Before 2020</h2>
+<ul class="publication-list">
+  <li>Yeshurun Y, Nguyen M and Hasson U. Amplification of local changes along the timescale processing hierarchy. <em>PNAS</em>. <a href="https://www.pnas.org/">2017; 114(35):9475-9480</a></li>
+  <li>Yeshurun Y, Swanson S, Simony E, Chen J, Honey CH, Lazaridi C, Hasson U. Same story, different story: Neural representation of frameworks for understanding. <em>Psych Sci</em>. <a href="https://journals.sagepub.com/">2017; 28(3):307-319</a></li>
+  <li>Simony E, Honey CH, Chen J, Lositsky O, Yeshurun Y, Wiesel A, Hasson U. Dynamic reconfiguration of the default mode network during narrative comprehension. <em>Nature Communications</em>. <a href="https://www.nature.com/">2016; 7:12141</a></li>
+  <li>Chen P, Chen J, Yeshurun Y, Hasson U, Haxby J, Ramadge P. A reduced-dimension fMRI shared response model. <em>NIPS Proceedings</em>. <a href="https://www.researchgate.net/">2015; 28</a></li>
+  <li>Gelstein S*, Yeshurun Y*, Rozenkrantz L, Shushan S, Frumin I, Roth Y, Sobel N. Human tears contain a chemosignal. <em>Science</em>. <a href="https://science.sciencemag.org/">2011; 331:226-30</a> (*Equal contribution)</li>
+  <li>Yeshurun Y, Sobel N. An odor is not worth a thousand words: from multidimensional odors to unidimensional odor objects. <em>Annual Review of Psychology</em>. <a href="https://www.annualreviews.org/">2010; 61:219-41</a></li>
+  <li>Yeshurun Y, Lapid H, Dudai Y, Sobel N. The privileged brain representation of first olfactory associations. <em>Current Biology</em>. <a href="https://www.sciencedirect.com/">2009; 29(39):12059-69</a></li>
+  <li>Yeshurun Y, Dudai Y, Sobel N. Working memory across nostrils. <em>Behavioral Neuroscience</em>. <a href="https://psycnet.apa.org/">2008; 122(5):1031-7</a></li>
+</ul>

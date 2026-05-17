@@ -5,7 +5,10 @@
 
 body {
   padding-top: 70px;
-  text-align: justify;
+  text-align: left;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 figcaption {
@@ -40,7 +43,7 @@ figcaption {
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  max-width: 900px; /* or 950px */
+  max-width: 1040px;
 }
 
 /* Carousel */
@@ -49,4 +52,90 @@ figcaption {
   border-radius: 3px 3px 3px 3px;
   margin-bottom: 20px;
   margin-top: 20px;
+}
+
+.site-banner {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  margin: 0 auto 28px;
+}
+
+.lab-quote {
+  border-left: 4px solid #5f7f8c;
+  color: #333;
+  font-family: Georgia, "Times New Roman", serif;
+  margin: 22px 0;
+  padding: 6px 0 6px 22px;
+}
+
+.lab-quote h1 {
+  font-size: 30px;
+  margin-top: 0;
+}
+
+.method-grid,
+.team-grid,
+.popular-grid,
+.picture-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin: 20px 0 28px;
+}
+
+.method-card,
+.team-card,
+.popular-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  background: #fff;
+}
+
+.team-card img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto 12px;
+}
+
+.team-card h3,
+.popular-card h3 {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.picture-grid img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.publication-year {
+  margin-top: 28px;
+}
+
+.publication-list li {
+  margin-bottom: 12px;
+}
+
+.map-frame {
+  border: 0;
+  width: 100%;
+  min-height: 420px;
+}
+
+@media (max-width: 767px) {
+  body {
+    padding-top: 58px;
+  }
+
+  .lab-quote h1 {
+    font-size: 24px;
+  }
 }

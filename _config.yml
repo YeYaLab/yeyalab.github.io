@@ -6,14 +6,13 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Research Lab
-email: your-email@domain.com
+title: Social and Cognitive Neuroscience (in the wild) Lab
+email: ye.ya.lab@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Yaara Yeshurun, Tel-Aviv University. Studying shared and divergent
+  understanding of real-life situations during real-life interactions.
 baseurl: ""
-url: ""
+url: "https://socon.github.io"
 
 include:
   - .htaccess

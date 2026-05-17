@@ -1,60 +1,99 @@
 ---
 title: "Team"
 layout: default
-excerpt: "RT2 Lab: Team members"
+excerpt: "People in the Social and Cognitive Neuroscience (in the wild) Lab"
 sitemap: false
 permalink: /team/
 ---
 
 <h1>{{page.title}}</h1>
 
-<!-- Staff -->
-
-<h2><a id="staff"></a>Staff</h2>
-{% assign members = site.posts | where: 'category', 'staff' | sort: 'date' %}
-{% for member in members %}
-<div class="card team-member-card">
-    <div class="row mt-3">
-        <div class="col-md-2">
-            <a href={{member.url}}>
-                <img src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.image }}"
-                    class="card-img img-responsive img-thumbnail"
-                    style="filter: grayscale(100%); max-width: 100px;"/>
-            </a>
-        </div>
-
-        <div class="col-md-10">
-            <div class="card-body">
-            <h4 class="card-title">{{ member.title }}</h4>
-            <p class="card-text">{{ member.role }}</p>
-            </div>
-        </div>
-    </div>
+<div class="team-grid">
+  <div class="team-card">
+    <img src="{{ site.baseurl }}/images/team/yaara-yeshurun.png" alt="Prof. Yaara Yeshurun">
+    <h3>Prof. Yaara Yeshurun | Lab Director</h3>
+    <p>Mail: <a href="mailto:yaaray@tauex.tau.ac.il">yaaray@tauex.tau.ac.il</a></p>
+    <p>Dr Yeshurun received her Ph.D. in Neurobiology from Weizmann Institute of Science in 2011. She then completed her postdoctoral training with Prof. Uri Hasson in Princeton University, focusing on the neural correlates of interpretation of naturalistic stimuli. Yeshurun joined the school of Psychological Sciences as a faculty member in 2018.</p>
+  </div>
+  <div class="team-card">
+    <img src="http://people.socsci.tau.ac.il/mu/yaarayeshurun/files/2021/11/me.jpg" alt="Liron Amihai">
+    <h3>Liron Amihai | PhD student & Technical lab manager</h3>
+    <p>Mail: <a href="mailto:Liramic@gmail.com">Liramic@gmail.com</a></p>
+    <p>Graduated BIU's gifted youth program, with a BSc in Mathematics, with honors. Passionate about Neurotech and relationships between people!</p>
+  </div>
+  <div class="team-card">
+    <img src="http://people.socsci.tau.ac.il/mu/yaarayeshurun/files/2021/01/argaman.jpeg" alt="Argaman Bell Meir">
+    <h3>Argaman Bell Meir | PhD Student & Lab Administrative Manager</h3>
+    <p>Mail: <a href="mailto:argamanbell@mail.tau.ac.il">argamanbell@mail.tau.ac.il</a></p>
+    <p>After graduating my BA in psychology at Tel Aviv University, I found the field of social interaction most appealing.</p>
+  </div>
+  <div class="team-card">
+    <img src="http://people.socsci.tau.ac.il/mu/yaarayeshurun/files/2020/10/טל.jpg" alt="Tal Ohad">
+    <h3>Tal Ohad | PhD Student</h3>
+    <p>Mail: <a href="mailto:talohad@mail.tau.ac.il">talohad@mail.tau.ac.il</a></p>
+    <p>Received a BA in Psychology and Biology with an emphasis on Neuroscience at Sagol school in Tel Aviv University. Fascinated by neural mechanisms associated with social interactions.</p>
+  </div>
+  <div class="team-card">
+    <img src="http://people.socsci.tau.ac.il/mu/yaarayeshurun/files/2022/11/AmitFreiman.jpeg" alt="Amit Freiman">
+    <h3>Amit Freiman | PhD Student</h3>
+    <p>Mail: <a href="mailto:amitfreiman@mail.tau.ac.il">amitfreiman@mail.tau.ac.il</a></p>
+    <p>After graduating my BA in psychology and biology with an emphasis on neuroscience I joined the lab for my MA.</p>
+  </div>
+  <div class="team-card">
+    <img src="http://people.socsci.tau.ac.il/mu/yaarayeshurun/files/2025/06/Yohay_Zvi.jpg" alt="Yohai Zvi">
+    <h3>Yohai Zvi | PhD Student</h3>
+    <p>Mail: <a href="mailto:yohayzvi@gmail.com">yohayzvi@gmail.com</a></p>
+    <p>I received both my BSc in Psychology and Biology track and MSc in the Cognitive track from Sagol school of neuroscience, and am currently a PhD candidate.</p>
+  </div>
+  <div class="team-card">
+    <img src="http://people.socsci.tau.ac.il/mu/yaarayeshurun/files/2024/07/IMG-20211024-WA00203.jpg" alt="Gabriel Braun">
+    <h3>Gabriel Braun | PhD student</h3>
+    <p>Mail: <a href="mailto:gabrielbraun@mail.tau.ac.il">gabrielbraun@mail.tau.ac.il</a></p>
+    <p>Currently pursuing a PhD under the co-supervision of Prof. Einat Shetreet and Prof. Yaara Yeshurun, my research centers on truth, lies, belief, disbelief, and language processing.</p>
+  </div>
+  <div class="team-card">
+    <img src="http://people.socsci.tau.ac.il/mu/yaarayeshurun/files/2024/07/IMG_4194-scaled.jpg" alt="Uri Shinitsky">
+    <h3>Uri Shinitsky | PhD Student</h3>
+    <p>Mail: <a href="mailto:shinitsky@gmail.com">shinitsky@gmail.com</a></p>
+    <p>I'm a musician-researcher studying auditory cognition, music's evolutionary role, and auditory attention in freely behaving humans.</p>
+  </div>
+  <div class="team-card">
+    <img src="http://people.socsci.tau.ac.il/mu/yaarayeshurun/files/2025/06/tzlil.jpg" alt="Tzlil Tabib">
+    <h3>Tzlil Tabib | MSc Student</h3>
+    <p>Mail: <a href="mailto:tzliltabib@mail.tau.ac.il">tzliltabib@mail.tau.ac.il</a></p>
+    <p>My research focuses on the neural mechanisms involved in social polarization, including outgroup derogation and ingroup favoritism.</p>
+  </div>
+  <div class="team-card">
+    <img src="http://people.socsci.tau.ac.il/mu/yaarayeshurun/files/2023/03/OmerItzhak_cropped.jpeg" alt="Omer Itzhak">
+    <h3>Omer Itzhak | MA Student</h3>
+    <p>Mail: <a href="mailto:omeritzhak1@mail.tau.ac.il">omeritzhak1@mail.tau.ac.il</a></p>
+    <p>I am fascinated by the unaware ways in which we influence each other's thoughts, feelings and behavior.</p>
+  </div>
+  <div class="team-card">
+    <img src="http://people.socsci.tau.ac.il/mu/yaarayeshurun/files/2024/07/425349727_10232786553263144_5527764937174553488_n.jpg" alt="Saar Kerlik">
+    <h3>Saar Kerlik | MSc Student</h3>
+    <p>Mail: <a href="mailto:Saarkerlik@matil.tau.ac.il">Saarkerlik@matil.tau.ac.il</a></p>
+    <p>I am interested in how inner perception of reality can shape external reality, consciousness, self-perception, and cognition.</p>
+  </div>
+  <div class="team-card">
+    <img src="http://people.socsci.tau.ac.il/mu/yaarayeshurun/files/2024/07/eldad.png" alt="Eldad Aviv">
+    <h3>Eldad Aviv | MSc Student</h3>
+    <p>Mail: <a href="mailto:eldad.aviv1@gmail.com">eldad.aviv1@gmail.com</a></p>
+    <p>My data-driven thesis focuses on linguistic patterns as indicators of interaction quality.</p>
+  </div>
 </div>
-{% endfor %}
 
-<!-- Students -->
+<h2>Alumni</h2>
 
-<h2><a id="student"></a>Students</h2>
-{% assign members = site.posts | where: 'category', 'student' | sort: 'date' %}
-{% for member in members %}
-<div class="card team-member-card">
-    <div class="row mt-3">
-        <div class="col-md-2">
-            <a href={{member.url}}>
-                <img src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.image }}"
-                    class="card-img img-responsive img-thumbnail"
-                    style="filter: grayscale(100%); max-width: 100px;"/>
-            </a>
-        </div>
-
-        <div class="col-md-10">
-            <div class="card-body">
-            <h4 class="card-title">{{ member.title }}</h4>
-            <p class="card-text">{{ member.role }}</p>
-            </div>
-        </div>
-    </div>
+<div class="team-grid">
+  <div class="team-card"><h3>Inbal Ravreby | PhD Student</h3><p>Mail: <a href="mailto:inbalra5991@gmail.com">inbalra5991@gmail.com</a></p></div>
+  <div class="team-card"><h3>Noam Edelshtein | Technical Lab Manager</h3><p>Mail: <a href="mailto:edelshtein@mail.tau.ac.il">edelshtein@mail.tau.ac.il</a></p></div>
+  <div class="team-card"><h3>Gal Boiman | Msc Student</h3><p>Mail: <a href="mailto:galboiman@mail.tau.ac.il">galboiman@mail.tau.ac.il</a></p></div>
+  <div class="team-card"><h3>Nitai Kerem | MSc Student</h3><p>Mail: <a href="mailto:nitaikerem@mail.tau.ac.il">nitaikerem@mail.tau.ac.il</a></p></div>
+  <div class="team-card"><h3>Keren Ruzal | Lab Administrative Manager</h3><p>Mail: <a href="mailto:kerenruzal@gmail.com">kerenruzal@gmail.com</a></p></div>
+  <div class="team-card"><h3>Valery Kostovetsky | MA student</h3><p>Mail: <a href="mailto:valek_93@hotmail.com">valek_93@hotmail.com</a></p></div>
+  <div class="team-card"><h3>Noa Katabi | MSc Student</h3><p>Mail: <a href="mailto:Noa18100@gmail.com">Noa18100@gmail.com</a></p></div>
+  <div class="team-card"><h3>Ran Amram | PhD Student</h3><p>Mail: <a href="mailto:ranamram1@gmail.com">ranamram1@gmail.com</a></p></div>
+  <div class="team-card"><h3>Sharon Yakim | Lab Technical Manager</h3><p><a href="https://www.linkedin.com/in/sharonyakim/">LinkedIn</a></p></div>
+  <div class="team-card"><h3>Yaara Lev | MA Student</h3><p>Mail: <a href="mailto:yaaralev@mail.tau.ac.il">yaaralev@mail.tau.ac.il</a></p></div>
 </div>
-
-{% endfor %}

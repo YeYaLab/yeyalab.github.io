@@ -1,13 +1,45 @@
 ---
 title: "Home"
 layout: homelay
-excerpt: "RT2 Lab at Institut Curie"
+excerpt: "Social and Cognitive Neuroscience (in the wild) Lab"
 sitemap: false
 permalink: /
 ---
 
-### About the Lab
+<img src="{{ site.baseurl }}/images/lab/banner.png" class="site-banner" width="2000" height="319" alt="Social and Cognitive Neuroscience (in the wild) Lab">
 
-Mauris vitae ultricies leo integer malesuada. Vulputate ut pharetra sit amet aliquam id diam maecenas. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus. Et tortor at risus viverra adipiscing at in. Urna nunc id cursus metus aliquam eleifend. Massa tincidunt dui ut ornare lectus. Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras. Enim diam vulputate ut pharetra sit. Facilisi cras fermentum odio eu feugiat pretium. Commodo elit at imperdiet dui accumsan sit amet nulla. Volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque. Vivamus at augue eget arcu dictum varius duis. Faucibus pulvinar elementum integer enim neque volutpat. Duis tristique sollicitudin nibh sit amet commodo nulla facilisi.
+<div class="lab-quote">
+  <h1>It's not what you look at that matters, it's what you see</h1>
+  <p>Henry David Thoreau</p>
+</div>
 
-Cras adipiscing enim eu turpis. Imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper. Sed lectus vestibulum mattis ullamcorper velit. Ut faucibus pulvinar elementum integer. Mattis nunc sed blandit libero volutpat sed cras ornare. Diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Risus nullam eget felis eget nunc lobortis mattis. In tellus integer feugiat scelerisque varius morbi enim. Eget nunc lobortis mattis aliquam faucibus purus in. Ut pharetra sit amet aliquam id diam maecenas ultricies mi. Augue neque gravida in fermentum et sollicitudin ac orci. Id donec ultrices tincidunt arcu non. Pharetra et ultrices neque ornare aenean euismod. Purus faucibus ornare suspendisse sed. Nibh tellus molestie nunc non blandit massa enim. Non diam phasellus vestibulum lorem sed risus. Vel eros donec ac odio tempor orci dapibus ultrices in. Libero id faucibus nisl tincidunt.
+It is clear that the filters through which we see the world - our beliefs, our emotions, our knowledge - shape our perception, behavior and interaction with other people.
+
+Our lab is interested in studying mechanisms underlying shared and divergent understanding of real-life situations during real-life interactions.
+
+Specifically, we are interested in Interpersonal Synchrony as a mechanism supporting shared understanding and affective response.
+
+## We do so by...
+
+<div class="method-grid">
+  <div class="method-card">
+    <h3>Facial expressions analysis</h3>
+    <p>We conduct behavioral experiments to study interpersonal synchrony in facial expressions.</p>
+  </div>
+  <div class="method-card">
+    <h3>Physiological Synchrony</h3>
+    <p>We use physiological measures such as HRV and eye movements.</p>
+  </div>
+  <div class="method-card">
+    <h3>Shared Language</h3>
+    <p>We conduct experiments to reveal people's tendency to synchronize in language lexicons and communication features.</p>
+  </div>
+  <div class="method-card">
+    <h3>fMRI</h3>
+    <p>We use complex stimuli such as movies and stories while measuring the brain response in the MRI scanner.</p>
+  </div>
+  <div class="method-card">
+    <h3>fNIRS</h3>
+    <p>We measure the brain response of two or more individuals while they interact using fNIRS.</p>
+  </div>
+</div>
