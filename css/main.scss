@@ -23,7 +23,14 @@ a:hover, a:focus { color: #2a4a5e; }
   border-bottom: 1px solid #e6e6e6;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
-.navbar-default .navbar-brand { color: #2a3a4d; font-weight: 600; }
+.navbar-default .navbar-brand {
+  color: #2a3a4d;
+  font-weight: 600;
+  max-width: calc(100% - 70px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .navbar-default .navbar-nav > li > a { color: #4a5a6a; }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus { color: #2a3a4d; }
@@ -42,6 +49,11 @@ a:hover, a:focus { color: #2a4a5e; }
   height: auto;
   margin: 0 auto 28px;
   border-radius: 6px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-top: 18px;
 }
 
 .lab-quote {
@@ -434,8 +446,41 @@ body.lightbox-open { overflow: hidden; }
 }
 
 @media (max-width: 767px) {
-  body { padding-top: 58px; }
-  .lab-quote h1 { font-size: 24px; }
+  body { padding-top: 58px; font-size: 15px; }
+
+  h1 { font-size: 24px; margin-top: 10px; }
+  h2 { font-size: 20px; }
+
+  .navbar-default .navbar-brand {
+    font-size: 15px;
+    padding-left: 12px;
+    padding-right: 6px;
+  }
+
+  /* Banner: keep a readable height on narrow screens by cropping the wide art */
+  .site-banner {
+    aspect-ratio: 3 / 1;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 4px;
+    margin-bottom: 18px;
+  }
+
+  .lab-quote {
+    margin: 18px auto;
+    padding: 14px 14px;
+  }
+  .lab-quote h1 { font-size: 20px; }
+  .lab-intro { font-size: 15px; }
+
+  .research-heading { margin: 24px 0 14px; }
+
   .footer-contact { text-align: left; margin-top: 12px; }
-  .article-cube { width: 170px; height: 170px; }
+  .article-cube { width: 160px; height: 160px; }
+  .article-details { font-size: 13px; padding: 10px; }
+}
+
+@media (max-width: 480px) {
+  .site-banner { aspect-ratio: 2.4 / 1; }
+  h1 { font-size: 22px; }
 }
