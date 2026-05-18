@@ -14,7 +14,8 @@
       "Bash(awk '/article-cube\">/,/<\\\\/p>/' /tmp/popsci.html)",
       "Bash(grep -v '^$')",
       "Bash(awk 'BEGIN{c=0} /article-cube\">/{c++} c>0{print} /<\\\\/p>/{c=0}' /tmp/popsci.html)",
-      "Bash(awk 'BEGIN{RS=\"article-cube\"; ORS=\"\"} NR>1 && NR<14 {print \"===CUBE \"NR-1\"===\\\\n\"; print substr\\($0,1,1200\\); print \"\\\\n\"}' /tmp/popsci.html)"
+      "Bash(awk 'BEGIN{RS=\"article-cube\"; ORS=\"\"} NR>1 && NR<14 {print \"===CUBE \"NR-1\"===\\\\n\"; print substr\\($0,1,1200\\); print \"\\\\n\"}' /tmp/popsci.html)",
+      "WebFetch(domain:api.semanticscholar.org)"
     ]
   }
 }
