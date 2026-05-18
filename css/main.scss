@@ -491,3 +491,131 @@ body.lightbox-open { overflow: hidden; }
   .site-banner { height: 95px; }
   h1 { font-size: 22px; }
 }
+
+/* ===== Dark theme toggle button ===== */
+.navbar-default .navbar-nav > li > .theme-toggle {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  padding: 15px 10px;
+  font-size: 17px;
+  line-height: 20px;
+  color: #4a5a6a;
+  display: block;
+  transition: color 0.2s;
+}
+.navbar-default .navbar-nav > li > .theme-toggle:hover,
+.navbar-default .navbar-nav > li > .theme-toggle:focus {
+  color: #2a3a4d;
+  outline: none;
+}
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav > li > .theme-toggle { padding: 10px 15px; }
+}
+
+/* ===== Dark theme — inspired by the deep shadows and teal tones in the banner paintings ===== */
+
+[data-theme="dark"] body {
+  background: #111d2b;
+  color: #dce6ef;
+}
+
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3 { color: #c4d8e8; }
+
+[data-theme="dark"] a { color: #75b8ce; }
+[data-theme="dark"] a:hover,
+[data-theme="dark"] a:focus { color: #9fd0e0; }
+
+/* Navbar */
+[data-theme="dark"] .navbar-default {
+  background-color: #0f1c29;
+  border-bottom-color: #2b3d54;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+[data-theme="dark"] .navbar-default .navbar-brand { color: #c4d8e8; }
+[data-theme="dark"] .navbar-default .navbar-nav > li > a { color: #8aa5bc; }
+[data-theme="dark"] .navbar-default .navbar-nav > li > a:hover,
+[data-theme="dark"] .navbar-default .navbar-nav > li > a:focus { color: #dce6ef; }
+[data-theme="dark"] .navbar-default .navbar-nav > li > .theme-toggle { color: #8aa5bc; }
+[data-theme="dark"] .navbar-default .navbar-nav > li > .theme-toggle:hover,
+[data-theme="dark"] .navbar-default .navbar-nav > li > .theme-toggle:focus { color: #dce6ef; }
+[data-theme="dark"] .navbar-default .navbar-toggle {
+  border-color: #2b3d54;
+}
+[data-theme="dark"] .navbar-default .navbar-toggle .icon-bar { background-color: #8aa5bc; }
+[data-theme="dark"] .navbar-default .navbar-toggle:hover,
+[data-theme="dark"] .navbar-default .navbar-toggle:focus { background-color: #1a2838; }
+@media (max-width: 767px) {
+  [data-theme="dark"] .navbar-default .navbar-collapse {
+    background-color: #0f1c29;
+    border-top-color: #2b3d54;
+  }
+}
+
+/* Lab quote */
+[data-theme="dark"] .lab-quote {
+  border-top-color: #2b3d54;
+  border-bottom-color: #2b3d54;
+}
+[data-theme="dark"] .lab-quote h1 { color: #c4d8e8; }
+[data-theme="dark"] .lab-quote p { color: #8aa5bc; }
+
+/* Research section */
+[data-theme="dark"] .research-heading { color: #8aa5bc; }
+[data-theme="dark"] .research-photo {
+  background: #1a2838;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+[data-theme="dark"] .research-card:hover .research-photo {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+}
+[data-theme="dark"] .research-card p { color: #8aa5bc; }
+
+/* Team grid */
+[data-theme="dark"] .team-hint { color: #8aa5bc; }
+[data-theme="dark"] .team-card {
+  background: #1a2838;
+  border-color: #2b3d54;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+[data-theme="dark"] .team-card:hover,
+[data-theme="dark"] .team-card:focus,
+[data-theme="dark"] .team-card.is-open {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.45);
+  border-color: #3d5a72;
+}
+[data-theme="dark"] .team-card.is-open { background: #223040; }
+[data-theme="dark"] .team-photo { background: #223040; }
+[data-theme="dark"] .team-role { color: #75b8ce; }
+[data-theme="dark"] .team-bio { color: #8aa5bc; }
+[data-theme="dark"] .team-alumni-heading {
+  border-top-color: #2b3d54;
+  color: #75b8ce;
+}
+
+/* Pictures */
+[data-theme="dark"] .picture-hint { color: #8aa5bc; }
+
+/* Publications */
+[data-theme="dark"] .publication-year {
+  color: #75b8ce;
+  border-bottom-color: #2b3d54;
+}
+
+/* Popular science */
+[data-theme="dark"] .popular-intro { color: #8aa5bc; }
+
+/* Footer */
+[data-theme="dark"] #footer {
+  background: #0a1520;
+  color: #8aa5bc;
+}
+[data-theme="dark"] #footer a { color: #75b8ce; }
+[data-theme="dark"] #footer a:hover { color: #9fd0e0; }
+[data-theme="dark"] .footer-title { color: #dce6ef; }
+[data-theme="dark"] .footer-copy {
+  border-top-color: rgba(255, 255, 255, 0.07);
+  color: #8aa5bc;
+}

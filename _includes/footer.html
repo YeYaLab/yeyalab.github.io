@@ -16,3 +16,21 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
+<script>
+(function () {
+  var btn = document.getElementById('theme-toggle');
+  if (!btn) return;
+  function isDark() { return document.documentElement.getAttribute('data-theme') === 'dark'; }
+  function applyTheme(dark) {
+    if (dark) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+      document.documentElement.removeAttribute('data-theme');
+    }
+    localStorage.setItem('theme', dark ? 'dark' : 'light');
+    btn.textContent = dark ? '☀' : '☾';
+  }
+  applyTheme(isDark());
+  btn.addEventListener('click', function () { applyTheme(!isDark()); });
+}());
+</script>
