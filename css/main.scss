@@ -26,10 +26,6 @@ a:hover, a:focus { color: #2a4a5e; }
 .navbar-default .navbar-brand {
   color: #2a3a4d;
   font-weight: 600;
-  max-width: calc(100% - 70px);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .navbar-default .navbar-nav > li > a { color: #4a5a6a; }
 .navbar-default .navbar-nav > li > a:hover,
@@ -457,6 +453,10 @@ body.lightbox-open { overflow: hidden; }
     font-size: 15px;
     padding-left: 12px;
     padding-right: 6px;
+    max-width: calc(100% - 50px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   /* Banner: show the full art on mobile via horizontal scroll, no crop */
